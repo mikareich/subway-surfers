@@ -1,10 +1,19 @@
+import { FPS } from './constants'
 import Renderer, { RenderObject } from './Renderer'
 
 const gameScreen = <HTMLCanvasElement>document.getElementById('gameScreen')
 
 const renderer = new Renderer(gameScreen)
 
-const objectA = new RenderObject(100, 100, { x: 100, y: 100 }, 'red')
-renderer.renderObjects.push(objectA)
+let lastTimestamp = 0
+function gameLoop(currentTimestamp: number) {
+  const deltaTime = currentTimestamp - lastTimestamp
 
-renderer.renderAll()
+  if (deltaTime > 1000 / FPS) {
+    console.log('hey')
+    lastTimestamp = currentTimestamp
+    renderer.renderAll()
+  }
+  requestAnimationFrame(gameLoop)
+}
+requestAnimationFrame(gameLoop)
