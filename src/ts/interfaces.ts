@@ -4,7 +4,7 @@ export interface Position {
 }
 
 export interface GameObject {
-  position: Position
   width: number
   height: number
+  position: Position
 }
