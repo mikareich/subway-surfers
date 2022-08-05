@@ -1,12 +1,4 @@
-interface position {
-  x: number
-  y: number
-}
-interface GameObject {
-  position: position
-  width: number
-  height: number
-}
+import { GameObject } from '../interfaces'
 
 export default function collisionDetector (
   gameObject1: GameObject,

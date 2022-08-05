@@ -1,10 +1,7 @@
-interface position {
-  x: number
-  y: number
-}
+import {Position } from '../interfaces';
 
 export default class GameObject {
-  public position: position = { x: 0, y: 0 }
+  public position: Position = { x: 0, y: 0 }
   public width: number = 0
   public height: number = 0
 
