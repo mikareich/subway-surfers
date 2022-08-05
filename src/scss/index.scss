@@ -1,1 +1,10 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
 
+#gameCanvas {
+  border: 1px solid black;
+}
