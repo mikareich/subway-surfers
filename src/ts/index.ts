@@ -1,4 +1,3 @@
-import { GAME_HEIGHT, GAME_WIDTH } from "./constants";
 import Renderer, { RenderObject } from "./Renderer";
 
 const gameScreen = <HTMLCanvasElement>document.getElementById("gameScreen");

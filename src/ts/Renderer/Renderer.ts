@@ -10,6 +10,11 @@ export interface RenderData {
 }
 
 class Renderer {
+  /**
+   * Render a single object to the game screen
+   * @param renderData Render information for the object to be rendered
+   * @param context The context to render the object to
+   */
   static render(renderData: RenderData, context: CanvasRenderingContext2D) {
     const { width, height, position, backgroundColor } = renderData;
     const { x, y } = position;

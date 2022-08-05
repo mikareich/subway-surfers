@@ -22,6 +22,7 @@ class RenderObject {
     this.backgroundColor = backgroundColor;
   }
 
+  /** Returns relevant informations for the renderer */
   get renderData(): RenderData {
     return {
       width: this.width,
