@@ -1,14 +1,14 @@
-import { Position } from "../interfaces";
-import { RenderData } from "./Renderer";
+import { Position } from '../interfaces'
+import { RenderData } from './Renderer'
 
 class RenderObject {
-  public width: number;
+  public width: number
 
-  public height: number;
+  public height: number
 
-  public position: Position;
+  public position: Position
 
-  public backgroundColor: string;
+  public backgroundColor: string
 
   constructor(
     width: number,
@@ -16,10 +16,10 @@ class RenderObject {
     position: Position,
     backgroundColor: string
   ) {
-    this.width = width;
-    this.height = height;
-    this.position = position;
-    this.backgroundColor = backgroundColor;
+    this.width = width
+    this.height = height
+    this.position = position
+    this.backgroundColor = backgroundColor
   }
 
   /** Returns relevant informations for the renderer */
@@ -29,8 +29,8 @@ class RenderObject {
       height: this.height,
       position: this.position,
       backgroundColor: this.backgroundColor,
-    };
+    }
   }
 }
 
-export default RenderObject;
+export default RenderObject

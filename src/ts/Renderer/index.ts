@@ -1,5 +1,5 @@
-import Renderer from "./Renderer";
+import Renderer from './Renderer'
 
-export { default as RenderObject } from "./RenderObject";
+export { default as RenderObject } from './RenderObject'
 
-export default Renderer;
+export default Renderer
