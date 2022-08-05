@@ -1,6 +1,6 @@
 import { GameObject } from '../interfaces'
 
-export default function collisionDetector(
+function collisionDetector(
   gameObject1: GameObject,
   gameObject2: GameObject
 ): boolean {
@@ -11,3 +11,5 @@ export default function collisionDetector(
     gameObject1.position.y + gameObject1.height > gameObject2.position.y
   )
 }
+
+export default collisionDetector

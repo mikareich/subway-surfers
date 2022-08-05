@@ -1,6 +1,6 @@
 import { Position } from '../interfaces'
 
-export default class GameObject {
+class GameObject {
   public width: number = 0
   public height: number = 0
   public position: Position = { x: 0, y: 0 }
@@ -12,7 +12,9 @@ export default class GameObject {
     this.position.y = y
   }
 
-  update(){
-    console.error("GameObject.update() is not implemented");
+  update() {
+    console.error('GameObject.update() is not implemented')
   }
 }
+
+export default GameObject
