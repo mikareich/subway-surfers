@@ -1,6 +1,6 @@
 import { GameObject } from '../interfaces'
 
-export default function collisionDetector (
+export default function collisionDetector(
   gameObject1: GameObject,
   gameObject2: GameObject
 ): boolean {
