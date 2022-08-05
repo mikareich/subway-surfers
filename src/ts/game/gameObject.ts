@@ -1,9 +1,9 @@
 import { Position } from '../interfaces'
 
 export default class GameObject {
-  public position: Position = { x: 0, y: 0 }
   public width: number = 0
   public height: number = 0
+  public position: Position = { x: 0, y: 0 }
 
   constructor(x: number, y: number, width: number, height: number) {
     this.width = width
@@ -12,7 +12,7 @@ export default class GameObject {
     this.position.y = y
   }
 
-  update() {
-    console.error('GameObject.update() is not implemented')
+  update(){
+    console.error("GameObject.update() is not implemented");
   }
 }
