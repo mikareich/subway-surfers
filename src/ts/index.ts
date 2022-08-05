@@ -1,9 +1,12 @@
 import { FPS } from './constants'
+import KeyboardHandler from './KeyboardHandler'
 import Renderer, { RenderObject } from './Renderer'
 
 const gameScreen = <HTMLCanvasElement>document.getElementById('gameScreen')
 
 const renderer = new Renderer(gameScreen)
+
+const keyHandler = new KeyboardHandler()
 
 let lastTimestamp = 0
 function gameLoop(currentTimestamp: number) {
@@ -16,4 +19,4 @@ function gameLoop(currentTimestamp: number) {
   }
   requestAnimationFrame(gameLoop)
 }
-requestAnimationFrame(gameLoop)
+// requestAnimationFrame(gameLoop)
